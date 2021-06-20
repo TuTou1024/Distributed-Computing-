@@ -1,0 +1,15 @@
+mvn clean
+mvn compile
+/*连续向队列中发送一系列消息*/
+mvn exec:java -Dexec.mainClass="Publisher"
+
+/*用同步方式从队列中接收消息*/
+mvn exec:java -Dexec.mainClass="SyncConsumer"
+
+/*用异步方式从队列中接收消息*/
+mvn exec:java -Dexec.mainClass="ASyncConsumer"
+
+
+
+
+

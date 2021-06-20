@@ -1,0 +1,15 @@
+mvn clean
+mvn compile
+/*运行公告牌程序*/
+mvn exec:java -Dexec.mainClass="BulletinBoard"
+
+/*重新启动一个控制台终端，运行消息发送程序 */
+
+mvn exec:java -Dexec.mainClass="PostMessage"
+
+
+
+
+
+
+
